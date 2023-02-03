@@ -1,0 +1,64 @@
+syntax = "proto3";
+package pangu_service_rpc;
+
+service PanGuModuleService
+{
+    rpc GetModuleList(NullRequest) returns (ModuleList) {}
+    rpc CallModuleInterface(ModuleCallRequest) returns (ModuleCallResponse) {}
+    rpc UpdateModule(ModuleUpdateRequest) returns (ModuleUpdateResponse) {}
+    rpc SyncModuleRunningData(NullRequest) returns (stream ModuleRunningDataResponse) {}
+}
+
+message BoolResponse
+{
+    bool value = 1;
+}
+
+message NullRequest {
+
+}
+
+message ModuleCallRequest
+{
+    
+    string module_name = 1;
+    string func_name = 2;
+    string func_args = 3;
+}
+
+message ModuleList
+{
+    message ModuleItem
+    {
+        string name = 1;
+        string version = 2;
+        string description = 3;
+        string author = 4;
+        string type = 5;
+        repeated string funcList = 6;
+    }
+    repeated ModuleItem modules = 1;
+}
+
+message ModuleUpdateRequest
+{
+    string path = 1;
+}
+
+message ModuleUpdateResponse
+{
+    bool status = 1;
+    string msg = 2;
+}
+
+message ModuleCallResponse
+{
+    string result = 1;
+}
+
+message ModuleRunningDataResponse
+{
+    string plugin_name = 1;
+    string type = 2;
+    string content = 3;
+}
