@@ -3,7 +3,7 @@
  * @Date: 2022-05-01 13:08:37
  * @version: 
  * @LastEditors: SpenserCai
- * @LastEditTime: 2023-02-08 16:37:00
+ * @LastEditTime: 2023-02-08 16:40:34
  * @Description: file content
  */
 #include "PanGuService.h"
@@ -14,7 +14,7 @@
 
 void PanGuService::DoWork() { 
     //获取用户名
-    string userName = ServiceUtils::getUserName();
+    string userName = ServiceUtils::getUserName(); 
     //获取当前时间
     string currentTime = ServiceUtils::getCurrentTime(); 
     // TODO:检查定时任务，如果到执行时间创建一个新的线程取执行任务
