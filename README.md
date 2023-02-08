@@ -3,7 +3,7 @@
  * @Date: 2023-02-03 16:40:24
  * @version: 
  * @LastEditors: SpenserCai
- * @LastEditTime: 2023-02-03 17:28:38
+ * @LastEditTime: 2023-02-08 16:17:13
  * @Description: file content
 -->
 <p align="center">
@@ -16,7 +16,7 @@
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable-next-line MD036 -->
-PanGu-Service是一个以C++开发，Grpc作为通讯协议的跨平台本地模块服务框架，支持Windows、Linux、MacOS等平台，开发者可以以模块化的方式给项目的服务开发插件！
+PanGu-Service是一个以C++开发，Grpc作为通讯协议的跨平台本地模块服务框架，支持Windows、Linux、MacOS等平台，开发者可以以模块化的方式给项目的服务开发插件！ 
 <!-- prettier-ignore-end -->
 
 <img alt="GitHub" src="https://img.shields.io/github/license/SpenserCai/PanGu-Service?style=for-the-badge">
