@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+#屏蔽所有build文件夹下的内容
+build/
+Plugins/*/build/

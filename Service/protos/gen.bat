@@ -1,0 +1,2 @@
+C:\Tool\vcpkg\packages\protobuf_x64-windows\tools\protobuf\protoc.exe --cpp_out=.\ pangu_service_rpc.proto
+C:\Tool\vcpkg\packages\protobuf_x64-windows\tools\protobuf\protoc.exe --grpc_out=. --plugin=protoc-gen-grpc="C:\Tool\vcpkg\installed\x64-windows\tools\grpc\grpc_cpp_plugin.exe" pangu_service_rpc.proto
