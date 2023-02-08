@@ -3,7 +3,7 @@
  * @Date: 2022-05-01 13:08:37
  * @version: 
  * @LastEditors: SpenserCai
- * @LastEditTime: 2023-02-08 16:24:55
+ * @LastEditTime: 2023-02-08 16:26:47
  * @Description: file content
  */
 #include "PanGuService.h"
@@ -12,7 +12,7 @@
 
 #pragma comment(lib,"Wtsapi32.lib")
 
-void PanGuService::DoWork() {
+void PanGuService::DoWork() { 
     //获取用户名
     string userName = ServiceUtils::getUserName();
     //获取当前时间
